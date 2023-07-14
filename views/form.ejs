@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Add Song</title>
+  <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+<body>
+  <div>
+    <h1>Add Song</h1>
+    <form action="/add" method="POST">
+      <label for="title">Title:</label><br>
+      <input type="text" id="title" name="title" required><br>
+
+      <label for="artist">Artists:</label><br>
+      <input type="text" id="artist" name="artist" required><br>
+
+      <label for="url">Spotify URL:</label><br>
+      <input type="text" id="url" name="url" required><br><br>
+
+      <button type="submit" class="add-song-button">Add Song</button>
+    </form>
+  </div>
+</body>
+
+</html>

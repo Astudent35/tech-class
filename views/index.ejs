@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Music Page</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<body>
+    <h1>My Music Page</h1>
+
+    <div class="section">
+        <div class="section-header">All Songs</div>
+        <ul class="song-list">
+            <% playlist.forEach(song => { %>
+                <li>
+                    Song: <%= song.title %>, Artist: <%= song.artist %>
+                </li>
+                <% }) %>
+        </ul>
+    </div>
+    <a href="/form">Add song</a>
+
+</body>
+</html>
